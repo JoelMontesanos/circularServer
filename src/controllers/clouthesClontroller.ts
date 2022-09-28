@@ -3,13 +3,13 @@ import pool from '../database';
 
 class ClouthesController{
 
-    public index (req: Request,res:Response) { // this is for testing
+    public index (req: Request, res:Response) { // this is for testing
         pool.query('DESCRIBE sheet1');
         res.json('Clouthes Index');
     }
 
     public async get (req: Request,res:Response):Promise<void> {  // This gets all the products
-        const clouthes =await pool.query('SELECT * FROM sheet1');
+        const clouthes = await pool.query('SELECT * FROM sheet1');
         res.json(clouthes);
     }
 

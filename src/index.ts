@@ -6,7 +6,6 @@ import cors from 'cors';
 
 // Here is where i created the server for nodejs as my backend in typescript
 
-
 class Server {
     public app: Application;
 
